@@ -1,0 +1,70 @@
+@mixin bill {
+  width: 100%;
+  height: 160px;
+  padding: 24px;
+  border-top: 1px solid rgba(0,0,0,.2);
+  .divider {
+    margin: 8px 0;
+  }
+  li span:last-child {
+    float: right;
+  }
+  li:last-child {
+    margin-top: 10px;
+  }
+}
+
+@mixin order-item {
+  height: 100%;
+  h3,h4 {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  img, .image {
+    width: 84px;
+    height: 126px;
+  }
+  span {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    &:last-child {
+      font-weight: bold;
+      text-align: right;
+    }
+  }
+}
+
+#checkout {
+  margin-bottom: 4rem;
+  #checkout-controller {
+    margin: 0 1rem;
+    padding-bottom: 2rem;
+    border: 1px solid rgba(0,0,0,.3);
+    height: auto;
+    .controller-header {
+      width: 94%;
+      margin: 0 auto;
+      padding: 18px 24px;
+    }
+    .control-wrap {
+      padding: 2rem 1.2rem;
+    }
+    .table {
+      width: 90%;
+      margin: 2rem auto;
+    }
+    .confrim-btn {
+      margin-left: 3rem;
+    }
+    .billdone-tips a {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
