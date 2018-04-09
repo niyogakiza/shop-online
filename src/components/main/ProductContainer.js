@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { Header, Dropdown } from 'semantic-ui-react';
 import ProductList from './ProductList';
 import Pagination from './Pagination';
 import 'assets/style/main.scss';
 import 'assets/style/product.scss';
 
-const propTypes = { dataProducts: PT.array, showcaseHeader: PT.string};
+const propTypes = {
+    dataProducts: PT.array,
+    showcaseHeader: PT.string
+};
 
 const options = [
     {text: 'Best Match', value:'Best Match'},

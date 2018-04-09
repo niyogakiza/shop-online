@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Popup, item } from 'semantic-ui-react';
+import { Popup, Item } from 'semantic-ui-react';
 import OrderItem from '../cart/OrderItem';
 import OrderBill from '../cart/OrderBill';
 import 'assets/style/cart.scss';

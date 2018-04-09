@@ -5,7 +5,6 @@ import 'assets/style/user.scss';
 
 class RegisterSite extends Component{
 
-
     componentDidMount(){
         Scroll(230, 300);
     }

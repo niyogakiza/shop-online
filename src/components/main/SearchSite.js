@@ -20,7 +20,7 @@ class SearchSite extends Component{
         axios
             .get('/src/data/productData/database.json')
             .then(res => {
-                const temp = new Array
+                const temp = [];
                     res.data.forEach(function (item, index) {
                     if(regSearch.test(item.name)) temp.push(item);
                 });

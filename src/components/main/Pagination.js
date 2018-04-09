@@ -15,13 +15,13 @@ class Pagination extends Component{
         this.handleItemClick = this.handleItemClick.bind(this);
     }
 
-    handleItemClick(){
+    handleItemClick() {
         Scroll(290, 300);
     }
 
     render(){
         const { page, currentPage } = this.props;
-        let itemsPagination = new Array();
+        let itemsPagination = [];
 
         for(let i = 0; i < page; i++){
             const link = (<Link to={'#'+(i+1)}>{i+1}</Link>);

@@ -1,6 +1,6 @@
 import React from 'react';
 import BannerCarousel from '../carousel/BannerCarousel';
-import HomeProductSection from '../HomeProductSection';
+import HomeProductSection from './HomeProductSection';
 
 
 const Home = () =>(

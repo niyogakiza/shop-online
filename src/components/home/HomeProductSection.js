@@ -43,6 +43,7 @@ class HomeProductSection extends Component{
 
     componentDidMount(){
         axios
+
             .get('/src/data/productData/hotSale.json')
             .then(res => {
                 this.setState({ dataHotSaleProduct:res.data })

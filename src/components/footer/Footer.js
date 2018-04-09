@@ -5,6 +5,7 @@ import FooterSocialInfo from './FooterSocialInfo';
 import FooterCopyright from './FooterCopyright';
 import 'assets/style/footer.scss';
 
+
 const Footer = () =>(
     <footer id='footer'>
         <FootMenu/>

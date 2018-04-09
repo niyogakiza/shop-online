@@ -4,6 +4,7 @@ import ProductImages from './ProductImages';
 import ProductHeader from './ProductHeader';
 import ProductColor from './ProductColor';
 import ProductSize from './ProductSize';
+//import ProductCount from './ProductCount';
 import ProductDetail from './ProductDetail';
 import axios from 'axios';
 

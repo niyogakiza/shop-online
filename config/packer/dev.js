@@ -1,8 +1,9 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifier = require('webpack-notifier');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const base = require('./base');
+const base = require('./base.js');
 
 module.exports = {
     context: base.rootPath,
@@ -12,9 +13,16 @@ module.exports = {
     },
     output: {
         path: base.staticPath,
-        fileName: 'assets/[name]_[hash:5].js',
+        filename: 'assets/[name]_[hash:5].js',
         publicPath: base.publicPath
     },
+    devServer:{
+        inline: false
+    },
+    // plugins1:[
+    //
+    //     [require('babel-plugin-transform-es2015-modules-commonjs'),{allowTopLevelThis: true}]
+    // ],
     module: {
         rules: [
             {
@@ -22,7 +30,7 @@ module.exports = {
                 include: base.srcPath,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: {loader:'css-loader', options: {minimize: false, modules: false, localIdentName:'[name]_[local]_[hash:base64:5]'}}
+                    use: {loader:'css-loader', options: {minimize: false, modules: false, localIdentName:'[name]__[local]__[hash:base64:5]'}}
                 })
             },
             {
@@ -58,6 +66,7 @@ module.exports = {
         modules: [base.libPath, base.srcPath]
     },
     plugins:[
+
         new webpack.DefinePlugin({
             'process.env.NODE_ENV':JSON.stringify('development')
         }),
@@ -67,7 +76,6 @@ module.exports = {
             contentImage: base.masterPath
         }),
         new HtmlWebpackPlugin({
-            favicon:'./favicon.ico',
             template:'./src/index.html',
             filename:'index.html',
             title: 'Shop Online',

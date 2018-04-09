@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Grid } from 'semantic-ui-react';
 import SidebarMenu from '../nav/SidebarMenu';
-import ProductContainer from '../ProductContainer';
+import ProductContainer from './ProductContainer';
 import Scroll from '../scroll/Scroll';
 import axios from 'axios';
 import 'assets/style/main.scss';

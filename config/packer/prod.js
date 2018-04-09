@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifier = require('webpack-notifier');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const base = require('./base');
+const base = require('./base.js');
 
 module.exports = {
     context: base.rootPath,
@@ -13,7 +13,8 @@ module.exports = {
     },
     output: {
         path: base.staticPath,
-        fileName: 'assets/[name]_[hash:5].js',
+        filename: 'assets/[name]_[hash:5].js',
+
         publicPath: base.publicPath
     },
     module: {
@@ -23,7 +24,7 @@ module.exports = {
                 include: base.srcPath,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: {loader:'css-loader', options: {minimize: false, modules: false, localIdentName:'[name]_[local]_[hash:base64:5]'}}
+                    use: {loader:'css-loader', options: {minimize: false, modules: false, localIdentName:'[name]__[local]__[hash:base64:5]'}}
                 })
             },
             {

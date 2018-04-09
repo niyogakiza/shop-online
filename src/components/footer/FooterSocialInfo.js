@@ -29,7 +29,7 @@ class FooterSocialInfo extends Component{
                    onClickOutside={this.handleClose}
                    page
                >
-               <img src="../../src/assets/img/.jpg" style={{ width:300, height:300}}/>
+               <img src="../.././assets/img/qrcode.jpg" style={{ width:300, height:300}}/>
                </Dimmer>
            </div>
         );

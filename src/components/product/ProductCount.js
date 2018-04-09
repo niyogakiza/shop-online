@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Header } from 'semantic-ui-react';
 
 
-class ProductCount extends Component{
+class ProductCount extends React.Component{
     constructor(props){
         super(props);
     }

@@ -6,6 +6,7 @@ import {
     Redirect,
     browserHistory
 } from 'react-router-dom';
+import axios from 'axios';
 
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
@@ -15,7 +16,7 @@ import SearchSite from '../components/main/SearchSite';
 import ProductDetailSite from '../components/product/ProductDetailSite';
 import CartSite from '../components/cart/CartSite';
 import LoginSite from '../components/user/LoginSite';
-import RegisterSite from'../components/user/RegisterSite';
+import RegisterSite from '../components/user/RegisterSite';
 
 class RouteApp extends Component{
     constructor(props){
@@ -35,7 +36,7 @@ class RouteApp extends Component{
     }
 
     handleLogin(email, password){
-        //let dataUser = [];
+        let dataUser = [];
         const _this = this;
 
         axios

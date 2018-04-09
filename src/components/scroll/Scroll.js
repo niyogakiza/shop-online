@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Scroll = function(target = 290, duration = 300){
     if(window.__scrollMove) return;
     const begin = document.documentElement.scrollTop || document.body.scrollTop;

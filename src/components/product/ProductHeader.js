@@ -8,7 +8,7 @@ const ProductHeader = (props) => {
     let clsPrice = '', originValue, actualValue;
     if(!marketPrice){
         actualValue = '$' + salePrice;
-        originValue = null,
+        originValue = null;
             clsPrice = 'common';
     } else {
         actualValue = '$' + salePrice;

@@ -82,7 +82,7 @@ const dataFooterMenu = [
     }
 ];
 
-const FootMenu = (props) =>{
+const FootMenu = () =>{
     let itemsSubMenu = dataFooterMenu.map(function(item, index){
         return(
             <Grid.Column key={index}>
@@ -95,6 +95,7 @@ const FootMenu = (props) =>{
             <Grid columns='four' divided>
                 <Grid.Row>
                     {itemsSubMenu}
+                    <SubscribeMenu/>
                 </Grid.Row>
             </Grid>
 

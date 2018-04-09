@@ -651,12 +651,12 @@ Here is an example:
 
 ```js
 import React from 'react';
-import logo from './logo.png'; // Tell Webpack this JS file uses this image
+import logo from './logo.png'; img
 
 console.log(logo); // /logo.84287d09.png
 
 function Header() {
-  // Import result is the URL of your image
+  img
   return <img src={logo} alt="Logo" />;
 }
 
