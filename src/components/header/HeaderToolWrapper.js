@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 
 import ToolBar from './ToolBar';
-import SearchBar from './SeachBar';
+import SearchBar from './SearchBar';
 import TopBtn from '../main/TopBtn';
 
 

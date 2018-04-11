@@ -23,11 +23,12 @@ class BannerCarousel extends Component{
 
     componentDidMount(){
         axios
-            .get('/src/data/carousel.json', {dataType: 'json'})
+            .get('/src/data/carousel.json')
             .then(res => this.setState({ dataCarousel: res.data }))
             .catch(err => console.log(err));
         Scroll(330, 300);
     }
+    //, {dataType: 'json'}
 
     componentWillUnmount(){
         this.axios = null;

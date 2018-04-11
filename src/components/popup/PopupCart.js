@@ -11,7 +11,7 @@ const PopupCart = (props) => {
     let { cart, btnTool } = props;
     let valueTotal = 0;
 
-    const itemsOrder = cart.map(function(item, index){
+    const itemsOrder = cart.map(function(item){
         valueTotal += item.salePrice * item.quantity;
 
         return(

@@ -38,7 +38,7 @@ class SearchSite extends Component{
 
     render(){
         const { dataProducts, isNotFound } = this.state;
-        const searchVal = decoderURI(this.props.location.search.substr(1));
+        const searchVal = decodeURI(this.props.location.search.substr(1));
         const productsCon = (
             <Route
                 children={({ location }) =>{

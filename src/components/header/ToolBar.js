@@ -36,7 +36,7 @@ const ToolBtn = (index, feature, icon) =>(
 const ToolBar = (props) => {
     let itemsToolRight = dataToolBtnsRight.map(function(item, index){
         let title = item.title
-            .replace(/\-/g,'  ')
+            .replace(/\-/g,' ')
             .replace(/^[a-z]?/,function($0){
                 return $0.toUpperCase();
             });

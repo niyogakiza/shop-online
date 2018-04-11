@@ -2,7 +2,7 @@ import React from 'react';
 import { List, Divider } from 'semantic-ui-react';
 
 
-const propTypes = { orderValue: PT.number };
+//const propTypes = { orderValue: PT.number };
 
 const OrderBill = (props) =>(
     <List className='order-bill'>
@@ -26,6 +26,6 @@ const OrderBill = (props) =>(
         </List.Item>
     </List>
 );
-OrderBill.propTypes = propTypes;
+//OrderBill.propTypes = propTypes;
 
 export default OrderBill;
