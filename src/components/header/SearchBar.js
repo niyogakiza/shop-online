@@ -65,11 +65,11 @@ class SearchBar extends Component{
     handleSearching(e){
         if(e.keyCode !== 13) return;
         if(e.target.value.trim() === '') return;
-        window.location.href = '/search' + e.target.value;
+        window.location.href = '/search?' + e.target.value;
     }
 
 
-    handleReachClear(){
+    handleReachClear(e){
         this.setState({
             isLoading: false,
             results: [],

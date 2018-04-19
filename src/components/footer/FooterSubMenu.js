@@ -11,7 +11,7 @@ const FooterSubMenu = (props) =>{
     let { menuHeader, menuItems } = props;
     let itemsSubMenuItem = menuItems.map(function (item, index) {
         const link = item.link
-            .replace(/\shop/g, 'Shop Online')
+            .replace(/\bigo/g, 'iGo')
             .replace(/\-/g, ' ')
             .replace(/^[a-z]?/,function($0){
                 return $0.toUpperCase();

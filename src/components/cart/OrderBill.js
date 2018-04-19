@@ -2,23 +2,23 @@ import React from 'react';
 import { List, Divider } from 'semantic-ui-react';
 
 
-//const propTypes = { orderValue: PT.number };
+const propTypes = { orderValue: PT.number };
 
 const OrderBill = (props) =>(
     <List className='order-bill'>
         <List.Item as='li'>
-            <span>Order Value:</span>
+            <span>ORDER VALUE:</span>
             <span>£{props.orderValue.toFixed(2)}</span>
         </List.Item>
         <List.Item as='li'>
-            <span>Delivery</span>
+            <span>DELIVERY</span>
             <span>£20.00</span>
         </List.Item>
         <List.Item  as='li'>
             <Divider/>
         </List.Item>
         <List.Item as='li'>
-            <span>Total</span>
+            <span>TOTAL</span>
             <span>£{(props.orderValue+10).toFixed(2)}</span>
         </List.Item>
         <List.Item as='li'>
@@ -26,6 +26,6 @@ const OrderBill = (props) =>(
         </List.Item>
     </List>
 );
-//OrderBill.propTypes = propTypes;
+OrderBill.propTypes = propTypes;
 
 export default OrderBill;

@@ -14,7 +14,7 @@ const ShowcaseHeader = (props) => {
     const{ iconHeader, headerMain, headerSub} = props;
 
     let showIcon = null;
-    if(!!iconHeader){
+    if(!iconHeader){
         showIcon = (<Icon name={iconHeader}/>)
     }
 

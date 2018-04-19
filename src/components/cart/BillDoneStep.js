@@ -41,7 +41,7 @@ class BillDoneStep extends Component{
                     <Header
                         as='h2'
                         className='controller-header'
-                        content='Thank you for shopping with us!'
+                        content='THANK YOU FOR SHOPPING WITH US!'
                     />
                     <p className='billdone-tips'>This page will jump to home page in {seconds} seconds, or click<Link to='/'>Here</Link> to jump.</p>
                 </Grid.Column>

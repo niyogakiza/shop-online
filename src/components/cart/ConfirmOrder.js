@@ -5,7 +5,7 @@ const ConfirmOrder = () =>(
     <Table definition>
         <Table.Body>
             <Table.Row>
-                <Table.Cell>Personal Details</Table.Cell>
+                <Table.Cell>PERSONAL DETAILS</Table.Cell>
                 <Table.Cell> Joe </Table.Cell>
             </Table.Row>
             <Table.Row>
@@ -13,19 +13,19 @@ const ConfirmOrder = () =>(
                 <Table.Cell>example@gmail.com</Table.Cell>
             </Table.Row>
             <Table.Row>
-                <Table.Cell>Home Adress</Table.Cell>
+                <Table.Cell>HOME ADDRESS</Table.Cell>
                 <Table.Cell> Ascote Lane 129 Dickens Heath/Shirley</Table.Cell>
             </Table.Row>
             <Table.Row>
-                <Table.Cell>Delivery Company</Table.Cell>
+                <Table.Cell>DeELIVERY COMPANY</Table.Cell>
                 <Table.Cell>Amazon</Table.Cell>
             </Table.Row>
             <Table.Row>
-                <Table.Cell>Delivery Notification</Table.Cell>
+                <Table.Cell>DELIVERY NOTIFICATION</Table.Cell>
                 <Table.Cell>3548379568HG</Table.Cell>
             </Table.Row>
             <Table.Row>
-                <Table.Cell>Order Value</Table.Cell>
+                <Table.Cell>ORDER VALUE</Table.Cell>
                 <Table.Cell>£ 800</Table.Cell>
             </Table.Row>
         </Table.Body>

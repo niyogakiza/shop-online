@@ -45,19 +45,19 @@ class CartSite extends Component{
             {
                 completed: isLogin,
                 active: !isLogin,
-                title:'Sign in',
+                title:'SIGNIN',
                 icon:'id card outline'
             },
             {
                 completed:isConfirm,
                 active:isLogin && !isConfirm,
-                title:'Confirm Order',
+                title:'CONFIRM ORDER',
                 icon:'idea'
             },
             {
                 completed: isConfirm,
                 active: false,
-                title:'Thank you',
+                title:'THANK YOU',
                 icon:'truck'
             }
         ];

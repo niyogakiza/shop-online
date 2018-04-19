@@ -15,7 +15,7 @@ const HeaderBrand = () =>(
             </Link>
         </Header.Content>
         <Header.Content as='h3' className='brand-des'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           E-commerce platform.
         </Header.Content>
 
     </Header>

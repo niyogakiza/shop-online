@@ -17,7 +17,7 @@ const OrderBar = (props) => {
 
     return(
         <Grid.Column id='order-bar' as='aside' width='4' textAlign='left'>
-            <Header as='h2' className='order-header' content='Your Order' dividing/>
+            <Header as='h2' className='order-header' content='YOUR ORDER' dividing/>
             <Item.Group divided>
                 {itemsOrder}
             </Item.Group>

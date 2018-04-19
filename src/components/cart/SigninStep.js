@@ -14,7 +14,7 @@ const SigninStep = (props) =>(
             <Header
                 as='h2'
                 className='controller-header'
-                content='Sign in'
+                content='SIGN IN'
                 dividing
             />
             <Grid className='control-wrap'>

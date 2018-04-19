@@ -17,14 +17,14 @@ const ConfirmStep = (props)=> (
             <Header
                 as='h2'
                 className='controller-header'
-                content='Confirm Order'
+                content='CONFIRM ORDER'
                 dividing
             />
             <ConfirmOrder/>
             <Button
                 className='confrim-btn'
                 color='black'
-                content='Complete Purchase'
+                content='COMPLETE PURCHASE'
                 onClick={() => props.handleBillDone()}
             />
         </Grid.Column>
